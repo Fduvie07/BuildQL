@@ -119,7 +119,8 @@ a {
 }
 
 .home a {
-    border-bottom: 4px solid #f9712c;
+    border-bottom: 4px solid #f85e10;
+    border-radius: 2px;
 }
 #menu .a1 {
     color: #000;
