@@ -37,7 +37,8 @@ header {
 }
 
 nav {
-    max-width: 1128px;
+    width: 100%;
+    max-width: 1160px;
     margin: auto;
     padding: 12px 0 16px;
     display: flex;
@@ -54,8 +55,9 @@ nav a img{
 
 @media(max-width: 768px) {
     nav {
+        width: 100%;
         align-items: center;
-        max-width: fit-content;
+        max-width: 100%;
     }
     nav a {
         padding: 15px 10px 0;
@@ -67,13 +69,8 @@ nav a img{
     }
     
 }
-/*
-nav div {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}*/
-nav .menu {
+
+#menu {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -102,66 +99,9 @@ h3 {
     }
 }
 
-/* ====== Header ====== *//*
-#header {
-    margin-left: 0px;
-    padding-right: 0px;
-    
-    border-bottom: 1px solid rgba(53, 6, 6, 0.336);
-}
-
-@media (max-width: 768px) {
-    #header {
-        padding-left: 24px;
-        padding-right: 24px;
-        border-bottom: none;
-    }
-}
-
-/* Navigation Bar *//*
-#header nav {
-    width: 100%;
-    margin: auto;
-    padding: 15px 96px 5px 96px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    justify-items: center;
-    position: relative;
-    justify-content: space-between;
-}
-
-/*
-@media (max-width: 768px) {
-    nav {
-
-    }
-}*/
-/*
-ul {
-    list-style: none;
-}
-@media (max-width: 768px) {
-    ul {
-       display: hidden;
-    }
-}
-*/
-
-
-/* Setting the dimensions of the logo *//*
-nav a img{
-    margin-bottom: -8px;
-    width: 128px;
-    height: 34px;
-}
-
-@media (max-width: 768px) {
-    nav a img {
-        width: 100px;
-        height: 28px;
-    }
+a {
+    text-decoration: none;
+    border: none;
 }
 
 /* Home link */
@@ -179,6 +119,14 @@ nav a img{
 }
 
 .home a {
+    border-bottom: 3px solid #f9712c;
+}
+#menu .a1 {
+    color: #000;
+    border: none;
+}
+#menu .a1 .home a {
+    color: #000;
     border-bottom: 7px solid #f9712c;
     border-radius: 7px;
 }
@@ -208,8 +156,8 @@ nav a img{
     color: #fff;
 }
 
-.signin a:active {
-    text-decoration: dotted;
+.signin a .signin{
+    text-decoration: none;
 }
 
 @media (max-width: 768px) {
@@ -236,14 +184,18 @@ section {
     position: relative;
     flex-wrap: wrap;
     width: 100%;
-    max-width: 1128px;
+    max-width: 1160px;
     align-items: center;
     margin: auto;
 }
 
 @media (max-width: 768px) {
     section {
+        width: 100%;
+        padding: 5px;
         padding-top: 5px;
+        padding-bottom: 10px;
+        align-items: center;
         margin: auto;
         min-height: 0px;
     }
@@ -291,14 +243,17 @@ section {
     flex-direction: row;
     width: 100%;
     justify-content: space-between;
-    flex-wrap: nowrap;
+    
 }
 
 @media (max-width: 768px) {
     #hero {
+        display: flex;
+        flex-direction: column;
         padding: 0px;
+        align-items: center;
         flex-wrap: wrap;
-        margin: 0px;;
+        margin: auto;
     }
 }
 
@@ -306,6 +261,7 @@ section {
     
     padding-top: 15px;
     padding-bottom: 35px;
+    padding-right: 24px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -319,17 +275,6 @@ section {
         padding-bottom: 24px;
     }
 }
-
-/*
-.heroText .text1 {
-    padding-top: 0px;
-}
-/*
-@media (max-width: 768px) {
-    .heroText .text1{
-        
-    }
-}*/
 
 
 .heroText h1 {
@@ -362,24 +307,13 @@ section {
 
 @media (max-width: 768px) {
     .heroText p {
-        /*margin-left: 15px;*/
         padding: 20px 10px;
         font-size: 18px;
         line-height: 35px;
         align-items: center;
     }
-    /*
-    .heroText p.p2 {
-        /*margin-left: 15px;
-    }*/
 }
 
-/*
-.heroImage img{
-    width: 580px;
-    height: 620px;
-}
-*/
 .button {
     padding-top: 30px;
     display: flex;
@@ -401,6 +335,16 @@ section {
     border: none;
 }
 
+iframe {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    iframe  {
+        display: none;
+    }
+}
+
 .button img {
     width: 217px;
     height: 249px;
@@ -419,12 +363,11 @@ section {
         display: none;
     }
 
-    .GS2 {
-        width: 50%;
+    a .GS2 {
+        width: 100%;
         font-size: 14px;
         font-weight: 300px;
         align-items: left;
-
     }
 }
 
@@ -432,12 +375,13 @@ section {
     display: flex;
     flex-direction: column;
     padding-left: 10px;
-    margin-left: 24px;
+    /*margin-left: 24px;*/
 }
 
 .hI1 {
     width: 100%;
-    height: 340px;
+    height: max-content;
+
     padding-right: 120px;
     z-index: -1;
 }
@@ -459,35 +403,23 @@ section {
 
 @media (max-width: 768px) {
     .heroImage {
-        /*
-        display: block;
-        background-color: #ffcbcb;
-        width:100%;
-        height: max-content;
-        padding-top: 30px;
-        margin: 0;
-        justify-items: center;
-        align-content: center;
-        align-items: center;*/
-
-        margin-top: 24px;
-        /*background-color: #00cc00;*/
-        width: 100%;
-        display: flex;
-        flex-direction: column;
+        margin: 34px 5px 24px;
+        padding-left: 0;
+        background-color: #00cc00;
+        display: flex; /* previously flex display */
+        /*flex-direction: column;*/
         align-items: center;
+        justify-content: center;
+        align-content: center;
         
     }
 
     .hI1 {
-        width: 100%;
-        height: 270px;
-        margin: auto;/*
-        margin-left: 48px;
-        margin-top: -72px;*/
+        padding-right: 0;
+        padding-left: 0;
+        display: flex;
         align-items: center;
         align-content: center;
-        justify-content: center;
         z-index: 1;
     }
     /*
@@ -499,8 +431,8 @@ section {
         }
     }*/
     .hI1 img {
-        width: 420px;
-        height: 270px;
+        width: 550px;
+        height: 380px;
     }
 
     .hI2, .hI3 {
@@ -530,7 +462,7 @@ section {
 @media (max-width: 768px) {
     #learn {
         margin-top: 36px;
-        margin-bottom:10px;
+        margin-bottom: 10px;
         padding-bottom: 24px;
     }
 }
@@ -588,8 +520,8 @@ section {
     }
 
     .learnImage img {
-        width: 420px;
-        height: 270px;
+        width: 590px;
+        height: 380px;
     }
 }
 
