@@ -53,6 +53,10 @@ nav a img{
 }
 
 @media(max-width: 768px) {
+    nav {
+        align-items: center;
+        max-width: fit-content;
+    }
     nav a {
         padding: 15px 10px 0;
     }
@@ -161,7 +165,7 @@ nav a img{
 }
 
 /* Home link */
-home {
+.home {
     display: block;
     font-size: 16px;
     font-weight: 600;
@@ -170,23 +174,23 @@ home {
     color: rgba(0, 0, 0, 0.9);
     margin: 0 12px 0 0;
 }
-home:hover {
+.home:hover {
     background-color: #fde7dd62;
 }
 
-home a {
+.home a {
     border-bottom: 7px solid #f9712c;
     border-radius: 7px;
 }
 @media (max-width: 768px) {
-    home{
+    .home{
         display: hidden;
         visibility: hidden;
     }
 }
 
 /* CTA: Get Started */
-signin {
+.signin {
     box-shadow: inset 0 0 0 1px #f9712c;
     color: white;
     font-family: sans-serif;
@@ -199,13 +203,17 @@ signin {
     border: none;
 }
 
-signin:hover {
+.signin:hover {
     background-color: #f9702cd8;
     color: #fff;
 }
 
+.signin a:active {
+    text-decoration: dotted;
+}
+
 @media (max-width: 768px) {
-    signin {
+    .signin {
         font-size: 14px;
         font-weight: 600;
         padding: 5px 20px;
