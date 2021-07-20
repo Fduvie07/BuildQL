@@ -700,7 +700,7 @@ iframe {
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    /*margin: auto;*/
+    transition: 1200ms ease-in-out;
 }
 
 .icon img {
@@ -711,6 +711,7 @@ iframe {
 @media (max-width: 768px) {    
     .icon {
         width: 90%;
+        transition: 1200ms ease-in-out;
     }
     .icon img {
         width: 36px;
@@ -720,6 +721,7 @@ iframe {
 @media (max-width: 768px) {    
     .icon {
         width: 90%;
+        transition: 1200ms ease-in-out;
     }
     .icon img {
         width: 24px;
@@ -775,6 +777,7 @@ iframe {
     font-size: 24px;
     font-family: sans-serif;*/
     padding-bottom: 12px;
+    transition: 1200ms ease-in-out;
 }
 
 @media (max-width: 768px) {
@@ -782,6 +785,7 @@ iframe {
         width: 100%;
         align-items: center;
         text-align: center;
+        transition: 1200ms ease-in-out;
     }
 }
 @media (max-width: 360px) {
@@ -789,6 +793,7 @@ iframe {
         width: 100%;
         align-items: center;
         text-align: center;
+        transition: 1200ms ease-in-out;
     }
 }
 
@@ -817,7 +822,7 @@ iframe {
     text-align: center;
     justify-content: space-between;
     align-items: center;
-
+    transition: 1200ms ease-in-out;
 }
 
 
@@ -829,6 +834,7 @@ iframe {
         padding-top: 32px;
         padding-bottom: 0px; 
         margin: 0;
+        transition: 1200ms ease-in-out;
     }  
 }
 @media (max-width: 360px) {     
@@ -839,6 +845,7 @@ iframe {
         padding-top: 32px;
         padding-bottom: 32px; 
         margin: 0;
+        transition: 1200ms ease-in-out;
     }   
 }
 
@@ -868,6 +875,7 @@ iframe {
     align-items: center;
     border: 1px solid rgba(59, 57, 57, 0.397);
     box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.4);
+    transition: 1200ms ease-in-out;
 }
 
 @media (max-width: 768px) {
@@ -875,6 +883,7 @@ iframe {
         width: 90%;
         height: max-content auto;
         margin: 36px 15px;
+        transition: 1200ms ease-in-out;
     } 
 }
 @media (max-width: 360px) {
@@ -882,6 +891,7 @@ iframe {
         width: 90%;
         height: max-content auto;
         margin: 24px 10px;
+        transition: 1200ms ease-in-out;
     }   
 }
 
@@ -1153,6 +1163,14 @@ iframe {
 
 .f-logo p {
     padding-top: 15px;
+}
+
+.social-links {
+    width: 100%;
+    padding-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .social-links img{
