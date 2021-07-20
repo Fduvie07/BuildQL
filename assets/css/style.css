@@ -278,7 +278,7 @@ section {
 @media (max-width: 768px) {     
     section {
         width: 100%;
-        padding: 0 20px 10px 20px;
+        padding: 0 15px 10px 10px;
         align-items: center;
         margin: auto;
         min-height: 0px;
@@ -288,8 +288,8 @@ section {
 @media (max-width: 360px) {     
     section {
         width: 100%;
-        padding-left: 20px;
-        padding-right: 40px;
+        padding-left: 10px;
+        padding-right: 15px;
         padding-top: 10px;
         padding-bottom: 10px;
         align-items: center;
@@ -343,6 +343,7 @@ section {
         align-items: center;
         justify-content: center;
         padding-bottom: 24px;
+        text-align: left;
     } 
 }
 @media (max-width: 360px) { 
@@ -351,6 +352,7 @@ section {
         align-items: center;
         justify-content: center;
         padding-bottom: 20px;
+        text-align: left;
     } 
 }
 
@@ -372,7 +374,7 @@ section {
 }
 @media (max-width: 360px) {
     .heroText h1 {
-        padding: 28px 40px 28px 20px;
+        padding: 28px 15px 28px 10px;
         font-size: 38px;
         font-weight: 600;
         line-height: 70px;
@@ -396,7 +398,7 @@ section {
         font-size: 20px;
         line-height: 35px;
         align-items: center;
-        text-align: center;
+        text-align: left;
     } 
 }
 @media (max-width: 360px) { 
@@ -405,7 +407,7 @@ section {
         font-size: 14px;
         line-height: 25px;
         align-items: center;
-        text-align: center;
+        text-align: left;
     }
 }
 
