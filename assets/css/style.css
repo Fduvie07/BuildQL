@@ -295,6 +295,7 @@ section {
         align-items: center;
         margin: auto;
         min-height: 0px;
+        transition: 750ms ease-in-out;
     }
 }
 
@@ -560,6 +561,37 @@ iframe {
     }
     .hI1 img {
         width: 100%;
+        height: auto;
+    }
+    .hI2, .hI3 {
+
+        display: none;
+        visibility: hidden;
+    }
+    .button img {
+        display: none;
+        visibility: hidden;
+    }
+}
+@media (max-width: 360px) {    
+    .heroImage {
+        margin: 34px 5px;
+        padding-left: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        align-content: center;       
+    }
+    .hI1 {
+        padding-right: 0;
+        padding-left: 0;
+        display: flex;
+        align-items: center;
+        align-content: center;
+        z-index: 2;
+    }
+    .hI1 img {
+        width: 95%;
         height: auto;
     }
     .hI2, .hI3 {
