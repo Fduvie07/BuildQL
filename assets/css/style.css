@@ -278,7 +278,7 @@ section {
 @media (max-width: 768px) {     
     section {
         width: 100%;
-        padding: 0 15px 5px 5px;
+        padding: 0 10px 5px 15px;
         align-items: center;
         margin: auto;
         min-height: 0px;
@@ -1034,7 +1034,7 @@ iframe {
 }
 
 .f-container {   
-    max-width: 1128px;
+    max-width: 1160px;
     margin: auto;
     padding: 24px 0 56px 0;
     display: flex;
@@ -1052,7 +1052,7 @@ iframe {
         padding: 0 0 0 10px;
     }    
 }
-@media (max-width: 768px) {
+@media (max-width: 360px) {
     .f-container {
         display: flex;
         flex-direction: column;
