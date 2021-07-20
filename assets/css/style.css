@@ -278,7 +278,7 @@ section {
 @media (max-width: 768px) {     
     section {
         width: 100%;
-        padding: 0 15px 5px 15px;
+        padding: 0 40px 5px 20px;
         align-items: center;
         margin: auto;
         min-height: 0px;
@@ -288,8 +288,8 @@ section {
 @media (max-width: 360px) {     
     section {
         width: 100%;
-        padding-left: 15px;
-        padding-right: 15px;
+        padding-left: 20px;
+        padding-right: 40px;
         padding-top: 10px;
         padding-bottom: 10px;
         align-items: center;
@@ -348,6 +348,7 @@ section {
 @media (max-width: 360px) { 
     .heroText {
         width: 100%;
+        padding: 0 40px 0 20px;
         align-items: center;
         justify-content: center;
         padding-bottom: 20px;
@@ -372,8 +373,8 @@ section {
 }
 @media (max-width: 360px) {
     .heroText h1 {
-        padding: 28px 0px;
-        font-size: 42px;
+        padding: 28px 40px 28px 20px;
+        font-size: 38px;
         font-weight: 600;
         line-height: 70px;
     } 
