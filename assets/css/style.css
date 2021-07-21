@@ -660,6 +660,10 @@ iframe {
     width: 100%;
     height: auto;
 }
+#photoshop, #adobeI, #whimsical,
+#framerX, #html5, #css3, #js {
+    display: none;
+}
 
 @media (max-width: 768px) {
     .learnImage {
@@ -1147,8 +1151,8 @@ iframe {
     
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    flex-wrap: wrap;/*
+    justify-content: space-around;*/
     padding-top: 24px;
 }
 
@@ -1169,12 +1173,27 @@ iframe {
     width: 100%;
     padding-top: 15px;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    align-items: left;
+}
+
+.social-links a {
+    padding-right: 20px;
 }
 
 .social-links img{
     border-radius: 10px;
+    width: 35px;
+    height: 35px;
+}
+
+@media (maxa-width: 768) {
+    .social-links {
+        width: 50%;
+        align-items: left;
+    }
+    .social-links a {
+        padding-right: 15px;
+    }
 }
 
 @media (max-width: 768px) {     
