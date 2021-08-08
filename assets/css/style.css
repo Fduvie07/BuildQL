@@ -648,6 +648,98 @@ iframe {
     text-align: center;
 }
 
+
+/* slideshow container */
+.slideshow-container {
+    max-width: 1160px;
+    position: relative;
+    margin: auto;
+}
+
+/* Hide the images by default  */
+.mySlides {
+    display: none;
+}
+
+/* Next and Previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Number text (1/7 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px; 
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from{opacity: .4}
+    to{opacity: 1}
+}
+/*
 .learnImage {
     display: flex;
     align-items: center;
@@ -664,38 +756,38 @@ iframe {
 #framerX, #html5, #css3, #js {
     display: none;
 }
-
-@media (max-width: 768px) {
+*/
+@media (max-width: 768px) {/*
     .learnImage {
         transition: 1200ms ease-in;
-    }
+    }*/
     .learnText p {
         font-size: 20px;
         margin: auto;
         line-height: 30px;
         text-align: center;
         transition: 1200ms ease-in;
-    }
+    }/*
     .learnImage img {
         width: 100%;
         height: auto;
-    } 
+    } */
 }
-@media (max-width: 360px) {
+@media (max-width: 360px) {/*
     .learnImage {
         transition: 1200ms ease-in;
-    }
+    }*/
     .learnText p {
         font-size: 16px;
         margin: auto;
         line-height: 25px;
         text-align: center;
         transition: 1200ms ease-in;
-    }
+    }/*
     .learnImage img {
         width: 100%;
         height: auto;
-    } 
+    } */
 }
 
 .icon {
@@ -1068,15 +1160,25 @@ iframe {
 .info-text p {
     padding-bottom: 15px;
     padding-top: 13px;
+    line-height: 40px;
 }
 @media (max-width: 768px) {
     .info-text {
         padding: 18px 10px;
     }
+    .info-text p{
+        
+        padding-bottom: 15px;
+        line-height: 40px;
+    }
 }
 @media (max-width: 360px) {
     .info-text {
         padding: 18px 10px;
+    }
+    .info-text p{
+        padding-bottom: 15px;
+        line-height: 40px;
     }
 }
 
@@ -1220,281 +1322,3 @@ iframe {
     width: 128px;
     height: 34px;
 }
-
-/* Smaller screens (360px) 
---------------------------*/
-
-/*
-@media (max-width: 360px) {
-    h1 {
-        font-size: 32px;
-    }
-
-    h2 {
-        font-size: 28px;
-    }
-
-    h3 {
-        font-size: 16px;
-    }
-
-    #header {
-        
-        margin: 0;
-        padding: 0;
-        outline: none;
-        font-size: 100%;
-        vertical-align: baseline;
-        background: red;
-        
-    }
-
-    nav {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        margin: 0px;
-        justify-content: space-between;
-        width: 100%;
-        max-width: 360px;
-    }
-    nav a {
-        padding: 10px 5px 0;
-    }
-
-    nav a img {
-        width: 108px;
-        height: 28px;
-    }
-
-    #menu .a1 {
-        display: none;
-    }
-
-    #menu .a2 {
-        display: flex;
-        align-items: center;
-        justify-items: center;
-    }
-    #menu .home{
-        display: none;
-    }
-    #menu .signin{
-        width: 100%;
-    }
-
-    .home{
-        display: none;
-        visibility: hidden;
-    }
-
-    .signin {
-        width: 30%;
-        font-size: 14px;
-        font-weight: 600;
-        padding: 5px 20px;
-    }
-
-    section {
-        width: 100%;
-        padding: 5px;
-        padding-top: 5px;
-        padding-bottom: 10px;
-        align-items: center;
-        margin: auto;
-        min-height: 0px;
-    }
-
-    #hero {
-        display: flex;
-        flex-direction: column;
-        padding: 0px;
-        align-items: center;
-        flex-wrap: wrap;
-        margin: auto;
-    }
-
-    .heroText {
-        width: 100%;
-        align-items: center;
-        justify-content: center;
-        padding-bottom: 24px;
-    }
-
-    .heroText h1 {
-        padding: 28px 15px;
-        font-size: 32px;
-        font-weight: 600;
-    }
-
-    .heroText p {
-        padding: 20px 10px;
-        font-size: 18px;
-        line-height: 35px;
-        align-items: center;
-    }
-
-    iframe  {
-        display: none;
-    }
-
-    .button {
-        align-items: center;
-        width: 100%;
-    }
-
-    .button img {
-        display: none;
-    }
-
-    a .GS2 {
-        width: 100%;
-        font-size: 14px;
-        font-weight: 300px;
-        align-items: left;
-    }
-
-    .heroImage {
-        margin: 34px 5px 24px;
-        padding-left: 0;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        align-content: center;
-        
-    }
-
-    .hI1 {
-        padding-right: 0;
-        padding-left: 0;
-        display: flex;
-        align-items: center;
-        align-content: center;
-        z-index: 1;
-    }
-    
-    .hI1 img {
-        width: 550px;
-        height: 380px;
-    }
-
-    .hI2, .hI3 {
-
-        display: none;
-        visibility: hidden;
-    }
-
-    .button img {
-        display: none;
-        visibility: hidden;
-    }
-
-    #learn {
-        margin-top: 36px;
-        margin-bottom: 10px;
-        padding-bottom: 24px;
-    }
-
-    #learn {
-        margin-top: 24px;
-    }
-
-    .learnText p {
-        font-size: 18px;
-        margin: auto;
-        line-height: 136%;
-    }
-
-    .learnImage img {
-        width: 590px;
-        height: 380px;
-    }
-
-    .icon {
-        width: 80%;
-    }
-
-    .icon img {
-        width: 24px;
-        height: 24px;
-    }
-
-    #we-teach {       
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        align-content: center;
-        font-size: 24px;
-        font-family: sans-serif;
-        margin-top: 24px;
-        padding-top: 56px;
-        padding-bottom: 0px;
-    }
-
-    #we-teach .box {
-        display: flex;
-        flex-direction: column;
-        justify-content: center; 
-        padding-top: 32px;
-        padding-bottom: 32px; 
-        margin-top: 24px ;
-        margin-bottom: 24px;
-    }
-
-    #we-teach .info-box {
-        width: 90%;
-        height: max-content;
-        margin-left: 15px;
-        margin-right: 15px;
-        margin-top: 36px;
-        margin-bottom: 36px;
-    }
-
-    #we-teach .description1,
-    #we-teach .description2,
-    #we-teach .description3 {
-        padding-top: 12px;
-        line-height: 30px;
-    }
-
-    #we-teach .title {
-        padding-bottom: 10px;
-    }
-
-    #about-us {
-        display: flex;
-        flex-direction: column-reverse;
-        align-items: center;
-        margin-top: 0px;
-        padding-top: 0px;
-    }
-
-    .about-image {
-        display: none;
-    }
-
-    .about-header2 {
-        align-items: center;
-    }
-
-    .about-text {
-        padding: 8px;
-    }
-
-    .bt1 {
-        text-align: center;
-    }
-
-    #footer {
-        display: block;
-    }
-
-    .f-container {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        align-items: left;
-        padding: 0 0 0 10px;
-
-    }
-}*/
