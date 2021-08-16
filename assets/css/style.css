@@ -385,7 +385,7 @@ section {
 .heroText p {
     font-family: sans-serif;
     font-size: 20px;
-    padding-bottom: 24px;
+    padding-bottom: 15px;
     line-height: 40px;
 }
 
@@ -398,7 +398,6 @@ section {
         padding: 20px 15px 20px 10px;
         font-size: 20px;
         line-height: 35px;
-        align-items: center;
         text-align: left;
     } 
 }
@@ -407,7 +406,7 @@ section {
         padding: 20px 15px 20px 10px;
         font-size: 14px;
         line-height: 25px;
-        align-items: center;
+        
         text-align: left;
     }
 }
@@ -1156,8 +1155,8 @@ iframe {
 }
 
 .info-text p {
+    font-size: 20px;
     padding-bottom: 15px;
-    padding-top: 13px;
     line-height: 40px;
 }
 @media (max-width: 768px) {
@@ -1165,9 +1164,9 @@ iframe {
         padding: 18px 10px;
     }
     .info-text p{
-        
-        padding-bottom: 15px;
-        line-height: 40px;
+        padding: 20px 15px 20px 10px;
+        font-size: 20px;
+        line-height: 35px;
     }
 }
 @media (max-width: 360px) {
@@ -1175,8 +1174,9 @@ iframe {
         padding: 18px 10px;
     }
     .info-text p{
-        padding-bottom: 15px;
-        line-height: 40px;
+        font-size: 14px;
+        padding-bottom: 10px;
+        line-height: 25px;
     }
 }
 
