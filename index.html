@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/slides.css">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -11,7 +10,34 @@
     <link href="assets/img/favicon.png" rel="icon">
     <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
     <title>Tech Forth</title>
-    <script src="assets/JavaScript/slides.js"></script>
+
+    <script type="text/javascript" src="assets/JavaScript/slides.js">/*
+        function changeToPs() {
+            document.getElementById("slideImage").src="illustrator_screen.png";
+        }
+        function changeToAi() {
+            document.getElementById("slideImage").src="Ai-screenshot.png";
+        }
+        function changeToWhim() {
+            document.getElementById("slideImage").src="Whimsical-screenshot.png";
+        }
+        function changeToFigma() {
+            document.getElementById("slideImage").src="figma_screen.png";
+        }
+        function changeToFramerX() {
+            document.getElementById("slideImage").src="framer_screen.png";
+        }
+        function changeToJs() {
+            document.getElementById("slideImage").src="js_screen.png";
+        }
+        function changeToHtml() {
+            document.getElementById("slideImage").src="HTML-screenshot.png";
+        }
+        function changeToCss() {
+            document.getElementById("slideImage").src="Css-screenshot.png";
+        }*/
+    </script>
+    
 </head>
 <body>
     <!-- ===== Header section ===== -->
@@ -67,107 +93,52 @@
                 <p>Learn the basics of programming language</p>
                 <p>and design tools to kickstart your tech journey today</p>
             </div>
-
-            <!-- =====Creating a Slideshow container ======== -->
             <div class="slideshow-container">
-
-                <!-- ==== Full width images with number
-                    and caption text ==== -->
-                <div class="mySlides fade">
-                    <div class="numbertext">
-                        1 / 7
-                    </div>
-                    <img src="assets/img/Ai-screenshot.png" alt="Adobe Illustrator">
-                    <div class="text">
-                        Adobe Illustrator
-                    </div>
+                <div class="learn-slides fade">
+                    <img id="slideImage" src="assets/img/photoshop_screen.png" style="width: 100%; height:auto; max-width: 1140px; padding-bottom: 20px;">
                 </div>
-    
-                <div class="mySlides fade">
-                    <div class="numbertext">
-                        2 / 7
-                    </div>
-                    <img src="assets/img/Whimsical-screenshot.png" alt="Whimsical Screen">
-                    <div class="text">
-                        Whimsical
-                    </div>
+                <div class="learn-slides fade">
+                    <img src="assets/img/Ai-screenshot.png" style="width: 100%; height:auto; max-width: 1140px; padding-bottom: 20px;" alt="">
                 </div>
-    
-                <div class="mySlides fade">
-                    <div class="numbertext">
-                        3 / 7
-                    </div>
-                    <img src="assets/img/figma_screen.png" alt="Figma Screen">
-                    <div class="text">
-                        Figma
-                    </div>
+                <div class="learn-slides fade">
+                    <img src="assets/img/Whimsical-screenshot.png" style="width: 100%; height:auto; max-width: 1140px; padding-bottom: 20px;" alt="">
                 </div>
-
-                <div class="mySlides fade">
-                    <div class="numbertext">
-                        4 / 7
-                    </div>
-                    <img src="assets/img/Framer-x-screenshot.png" alt="FramerX Screen">
-                    <div class="text">
-                        Framer X
-                    </div>
+                <div class="learn-slides fade">
+                    <img src="assets/img/figma_screen.png" style="width: 100%; height:auto; max-width: 1140px; padding-bottom: 20px;" alt="">
                 </div>
-
-                <div class="mySlides fade">
-                    <div class="numbertext">
-                        5 / 7
-                    </div>
-                    <img src="assets/img/Html-screenshot.png" alt="HTML Screen">
-                    <div class="text">
-                        HTML5
-                    </div>
+                <div class="learn-slides fade">
+                    <img src="assets/img/framer_screen.png" style="width: 100%; height:auto; max-width: 1140px; padding-bottom: 20px;" alt="">
                 </div>
-
-                <div class="mySlides fade">
-                    <div class="numbertext">
-                        6 / 7
-                    </div>
-                    <img src="assets/img/Css-screenshot.png" alt="CSS">
-                    <div class="text">
-                        Cascading Style Sheet
-                    </div>
+                <div class="learn-slides fade">
+                    <img src="assets/img/js_screen.png" style="width: 100%; height:auto; max-width: 1140px; padding-bottom: 20px;" alt="">
                 </div>
-
-                <div class="mySlides fade">
-                    <div class="numbertext">
-                        7 / 7
-                    </div>
-                    <img src="assets/img/Js-screenshot.png" alt="FramerX Screen">
-                    <div class="text">
-                        JavaScript
-                    </div>
+                <div class="learn-slides fade">
+                    <img src="assets/img/HTML-screenshot.png" style="width: 100%; height:auto; max-width: 1140px; padding-bottom: 20px;" alt="">
                 </div>
-    
-                <!-- ==== Next and Previous Buttons ==== -->
-                <a class="prev" onclick="plusSlides(-1)">&#10094</a>
-                <a class="next" onclick="plusSlides(1)">&#10095</a>
+                <div class="learn-slides fade">
+                    <img src="assets/img/Css-screenshot.png" style="width: 100%; height:auto; max-width: 1140px; padding-bottom: 20px;" alt="">
+                </div>
             </div>
-            <!--
-            <div class="learnImage">
-                <img id="photoshop" src="assets/img/figma_screen.png" alt="">
-                <img id="adobeI" src="assets/img/figma_screen.png" alt="">
-                <img id="whimsical" src="assets/img/figma_screen.png" alt="">
-                <img id="figma" src="assets/img/figma_screen.png" alt="">
-                <img id="framerX" src="assets/img/figma_screen.png" alt="">
-                <img id="html5" src="assets/img/figma_screen.png" alt="">
-                <img id="css3" src="assets/img/figma_screen.png" alt="">
-                <img id="js" src="assets/img/figma_screen.png" alt="">
-            </div>-->
+            <div class="point">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+                <span class="dot" onclick="currentSlide(6)"></span>
+                <span class="dot" onclick="currentSlide(7)"></span>
+                <span class="dot" onclick="currentSlide(8)"></span>
+            </div>
 
-            <div class="icon">
-                <img src="assets/img/ps-logo.png" alt="PhotoShop Logo">
-                <img src="assets/img/ai-logo.png" alt="Ai Logo">
-                <img src="assets/img/whimisical-logo.png" alt="whimisical-logo">
-                <img src="assets/img/Figma-logo.png" alt="Figma-logo">
-                <img src="assets/img/framerx-logo-black.png" alt="">
-                <img src="assets/img/js_2.png" alt="JavaScript Logo">
-                <img src="assets/img/HTML_2.png" alt="HTML Logo">
-                <img src="assets/img/CSS_Logo_2.png" alt="CSS Logo">
+            <div class="icons">
+                <a href="#slideImage" onclick="changeToPs()"><img src="assets/img/ps-logo.png"></a>
+                <a onclick="changeToAi()"><img src="assets/img/ai-logo.png"></a>
+                <a onclick="changeToWhim()"><img src="assets/img/whimisical-logo.png" alt="whimisical-logo"></a>
+                <a onclick="changeToFigma()"><img src="assets/img/Figma-logo.png" alt="Figma-logo"></a>
+                <a onclick="changeToFramerX()"><img src="assets/img/framerx-logo-black.png" alt=""></a>
+                <a onclick="changeToJs()"><img src="assets/img/js_2.png" alt="JavaScript Logo"></a>
+                <a onclick="changeToHtml()"><img src="assets/img/HTML_2.png" alt="HTML Logo"></a>
+                <a onclick="changeToCss()"><img src="assets/img/CSS_Logo_2.png" alt="CSS Logo"></a>
             </div>
         </div><!--
         <div class="learn-down-arrow">
@@ -301,5 +272,38 @@
             </div>
         </div>
     </footer> <!-- ===== End of Footer Section ===== -->
+
+    <script src="assets/JavaScript/slides.js">/*
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if(n > slide.length) {
+                slideIndex = 1;
+            }
+            if (n < 1) {
+                slideIndex = slides.length;
+            }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for(i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";
+            dots[slideIndex-1].className += " active";
+        }*/
+    </script>
 </body>
 </html>

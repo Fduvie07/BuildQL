@@ -451,7 +451,7 @@ section {
     margin-left: 350px;
     margin-top: px;
     margin-bottom: -78px;
-
+    background-color: transparent;
 }
 
 @media (max-width: 768px) {   
@@ -611,6 +611,7 @@ iframe {
 
 /* ======= Learn and Explore page ====== */
 #learn {
+    box-sizing: border-box;
     padding-top: 36px;
     width: 100%;
     display: flex;
@@ -648,76 +649,45 @@ iframe {
     text-align: center;
 }
 
-
-/* slideshow container */
 .slideshow-container {
-    max-width: 1160px;
+    max-width: 1128px;
+    width: 90%;
+    height:fit-content;
     position: relative;
     margin: auto;
-}
-
-/* Hide the images by default  */
-.mySlides {
-    display: none;
-}
-
-/* Next and Previous buttons */
-.prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    margin-top: -22px;
-    padding: 16px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-}
-
-.prev:hover, .next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-}
-
-/* Caption text */
-.text {
-    color: #f2f2f2;
-    font-size: 15px;
-    padding: 8px 12px;
-    position: absolute;
-    bottom: 8px;
-    width: 100%;
     text-align: center;
 }
 
-/* Number text (1/7 etc) */
-.numbertext {
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
+.slideshow-container img {
+    max-width: 1140px;
+    width: 1128px;
+    height: auto;
 }
 
-/* The dots/bullets/indicators */
+.learn-slides {
+    display: none;
+}
+
+#slideImage {
+    display: block;
+}
+.point {
+    display: none;
+    margin-top: -36px;
+    z-index: 5;
+}
+
 .dot {
     cursor: pointer;
     height: 15px;
     width: 15px;
-    margin: 0 2px; 
+    margin: 0 2px;
     background-color: #bbb;
     border-radius: 50%;
     display: inline-block;
     transition: background-color 0.6s ease;
 }
+
 .active, .dot:hover {
     background-color: #717171;
 }
@@ -729,17 +699,25 @@ iframe {
     animation-name: fade;
     animation-duration: 1.5s;
 }
-
 @-webkit-keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
+    from {
+        opacity: .4;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 @keyframes fade {
-    from{opacity: .4}
-    to{opacity: 1}
+    from {
+        opacity: .4;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
-/*
+
 .learnImage {
     display: flex;
     align-items: center;
@@ -752,78 +730,99 @@ iframe {
     width: 100%;
     height: auto;
 }
-#photoshop, #adobeI, #whimsical,
-#framerX, #html5, #css3, #js {
-    display: none;
-}
-*/
-@media (max-width: 768px) {/*
+
+@media (max-width: 768px) {
     .learnImage {
         transition: 1200ms ease-in;
-    }*/
+    }
     .learnText p {
         font-size: 20px;
         margin: auto;
         line-height: 30px;
         text-align: center;
         transition: 1200ms ease-in;
-    }/*
+    }
     .learnImage img {
         width: 100%;
         height: auto;
-    } */
+    } 
 }
-@media (max-width: 360px) {/*
+@media (max-width: 360px) {
     .learnImage {
         transition: 1200ms ease-in;
-    }*/
+    }
     .learnText p {
         font-size: 16px;
         margin: auto;
         line-height: 25px;
         text-align: center;
         transition: 1200ms ease-in;
-    }/*
+    }
     .learnImage img {
         width: 100%;
         height: auto;
-    } */
+    }
 }
 
-.icon {
-    width: 80%;
+/* Icon will be sused as buttons to switch the images
+-----------------------------------------------------*/
+.icons {
+    padding-top: 24px;
+    width: 90%;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
     transition: 1200ms ease-in-out;
+    background-color: transparent;
 }
 
-.icon img {
+.icons a {
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background-color: transparent;
+}
+
+.icons a img {
     width: 56px;
     height: 56px;
 }
 
+.icons a img:hover {
+    width: 64px;
+    height: 64px;
+}
+
 @media (max-width: 768px) {    
-    .icon {
+    .icons {
         width: 90%;
         transition: 1200ms ease-in-out;
     }
-    .icon img {
+    .icons a img {
         width: 36px;
         height: 36px;
     }
+    .icons a img:hover {
+        width: 44px;
+        height: 44px;
+    }
 }
 @media (max-width: 768px) {    
-    .icon {
+    .icons {
         width: 90%;
         transition: 1200ms ease-in-out;
     }
-    .icon img {
+    .icons a img {
         width: 24px;
         height: 24px;
     }
+    .icons a img:hover {
+        width: 32px;
+        height: 32px;
+    }
 }
+
 
 /* End of About Page */
 
